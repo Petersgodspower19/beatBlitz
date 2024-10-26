@@ -29,10 +29,9 @@ function SideBar({ onClose }) {
         >
             <IoMdClose size={32} onClick={handleClose} className='mb-7' />
             <ul className='nav-list flex flex-col gap-3 mb-3'>
-                <Links closeBar={handleClose}>Home</Links>
+                <Links to="home" closeBar={handleClose}>Home</Links>
                 <Links to="products" closeBar={handleClose}>Products</Links>
                 <Links to="cart" closeBar={handleClose}>Cart</Links>
-                <Links>Contact</Links>
             </ul>
             <Button>Sign In</Button>
         </div>
